@@ -9,7 +9,7 @@
         </div>
         <div class="buttons">
             <button>Sign In</button>
-            <button>Sign Up</button>
+            <router-link to="/signup" class="signup">Sign Up</router-link>
         </div>
     </nav>
     </section>
@@ -66,9 +66,15 @@ section{
         padding-inline: 2rem;
         padding-block: 1rem;
     }
-    .buttons button:nth-child(2){
+    .signup{
+        border: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-inline: 2rem;
+        padding-block: 1rem;
          background: var(--blue);
          color: var(--white);
          border-radius: 6px;
+         text-decoration: none;
     }
 </style>
