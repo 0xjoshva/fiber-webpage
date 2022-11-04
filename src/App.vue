@@ -50,6 +50,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --text: #4F4F4F;
   --blue: #4D13D1;
   --white: #ffffff;
+  --lgrey: #DEDEDE;
 }
 </style>
 

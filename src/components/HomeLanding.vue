@@ -13,12 +13,12 @@
           <p>Rated 4.8/5 (243 reviews)</p>
         </div>
         <h1>Create your portfolio in minutes.</h1>
-        <p>
+        <p id="para">
           With Fiber, you can setup your own personal portfolio in minutes with
           dozens of premade, beautiful templates.
         </p>
         <div class="herobtn">
-          <button>Start Free Trial</button>
+          <button id="blue-btn">Start Free Trial</button>
           <button>View Examples</button>
         </div>
         <div class="checkdiv">
@@ -36,12 +36,13 @@ export default {};
 <style scoped>
 section {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
+  background-color: #FBF8F3;
 }
 .container {
-  background: var(--white);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,7 +56,6 @@ img {
 }
 .left{
     width:50%;
-    border:1px solid black;
     height: fit-content;
 }
 .stars {
@@ -69,12 +69,15 @@ img {
   column-gap: 1.2rem;
 font-size: 1.2rem;
 font-weight: 500;
-margin-bottom: .8rem;
+margin-bottom: .2rem;
 }
 .checkdiv{
     display: flex;
     width: 100%;
     column-gap: 1rem;
+    font-size: 1.15rem;
+   color: var(--text);
+   font-weight: 400;
 }
 .check{
     display: flex;
@@ -82,6 +85,7 @@ margin-bottom: .8rem;
     align-items: center;
     width: fit-content;
     column-gap: .5rem;
+    margin-top: 1rem;
 }
 #checkimg{
     width: 1.5rem;
@@ -90,5 +94,38 @@ margin-bottom: .8rem;
 h1{
     font-size: 4.2rem;
     line-height: 4.8rem;
+    padding-bottom: 1rem;
+    width: 90%;
+}
+button{
+  margin-top: 1rem;
+      background: none;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+       
+        padding-inline: 1.6rem;
+        padding-block: 1rem;
+}
+#blue-btn{
+
+        background: var(
+          --blue
+        );
+
+        color: var(--white);
+        border-radius: 7px;
+}
+#para{
+  width: 80%;
+  font-weight: 400;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+button:nth-child(2){
+  color: var(--blue);
+  text-decoration: 
+  underline 2px;
 }
 </style>

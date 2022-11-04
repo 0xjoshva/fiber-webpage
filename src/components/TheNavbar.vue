@@ -25,7 +25,7 @@ section{
     height: 100px;
     display: flex;
     justify-content: center;
-    background: var(--white);
+   background-color: #FBF8F3;
 }
     nav{
         padding-top: 3rem;
@@ -34,6 +34,8 @@ section{
         justify-content: space-between;
         align-items: center;
         position: fixed;
+        background-color: #FBF8F3;
+        padding-bottom: 1rem;
     }
     .links{
         display: flex;
